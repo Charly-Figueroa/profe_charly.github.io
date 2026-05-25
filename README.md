@@ -2,5 +2,5 @@
 <br>Esta es una práctica para publicar nuestra página WEB estática en GitHub
 <br>
 <ol>
-    <li a href="listas_con_css.html">Esta página muestra diferentes listas con estilos CSS</li>    
+    <li href="listas_con_css.html">Esta página muestra diferentes listas con estilos CSS</li>    
 </ol>
