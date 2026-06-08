@@ -2,136 +2,301 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Proyectos Implementa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolios Implementa CBTis 132 2AMPRG</title>
+
     <link rel="icon" href="avatar.jpg">
 
     <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/materia/bootstrap.min.css"
-        rel="stylesheet">
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
     <style>
-        body{
-            background:#f4f7fa;
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
-        .hero{
-            background:linear-gradient(135deg,#1565c0,#42a5f5);
+        body{
+            background:#0f172a;
+            color:#e2e8f0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .app-shell{
+            display:flex;
+            min-height:100vh;
+        }
+
+        .sidebar{
+            width:280px;
+            background:#1e293b;
+            padding:30px;
+            border-right:2px solid #38bdf8;
+            position:fixed;
+            height:100%;
+            overflow-y:auto;
+        }
+
+        .sidebar h1{
             color:white;
-            padding:60px 20px;
-            text-align:center;
+            font-size:2rem;
+            margin-bottom:10px;
+        }
+
+        .sidebar p{
+            color:#cbd5e1;
+            margin-bottom:25px;
+        }
+
+        .menu-box{
+            background:#0f172a;
+            border:1px solid #334155;
+            border-radius:12px;
+            padding:20px;
+            margin-top:20px;
+        }
+
+        .menu-box h5{
+            color:#38bdf8;
+            margin-bottom:15px;
+        }
+
+        .menu-box ul{
+            padding-left:20px;
+        }
+
+        .menu-box li{
+            margin-bottom:8px;
+        }
+
+        .content{
+            margin-left:280px;
+            width:100%;
+            padding:40px;
+        }
+
+        .header-card{
+            background:#1e293b;
+            border:1px solid #334155;
+            border-radius:15px;
+            padding:30px;
             margin-bottom:30px;
         }
 
-        .hero h1{
-            font-weight:bold;
+        .header-card h2{
+            color:white;
+            margin-bottom:10px;
+        }
+
+        .header-card p{
+            color:#cbd5e1;
+            margin-bottom:0;
+        }
+
+        .counter{
+            background:#1e293b;
+            border:1px solid #38bdf8;
+            border-radius:12px;
+            padding:15px;
+            margin-bottom:30px;
+            text-align:center;
+            font-size:1.1rem;
         }
 
         .card{
-            border:none;
-            box-shadow:0 4px 15px rgba(0,0,0,.1);
-        }
-
-        .list-group-item{
+            background:#1e293b;
+            border:1px solid #334155;
+            border-radius:15px;
             transition:.3s;
+            height:100%;
         }
 
-        .list-group-item:hover{
-            background:#e3f2fd;
-            transform:translateX(5px);
+        .card:hover{
+            transform:translateY(-5px);
+            border-color:#38bdf8;
+        }
+
+        .card-title{
+            color:white;
+            font-size:1rem;
+            min-height:48px;
+        }
+
+        .btn-primary{
+            background:#0ea5e9;
+            border:none;
+        }
+
+        .btn-primary:hover{
+            background:#0284c7;
+        }
+
+        .btn-secondary{
+            background:#475569;
+            border:none;
         }
 
         footer{
-            margin-top:40px;
             text-align:center;
-            color:#666;
-            padding:20px;
+            color:#94a3b8;
+            margin-top:40px;
         }
+
+        @media(max-width:768px){
+
+            .sidebar{
+                position:relative;
+                width:100%;
+                height:auto;
+            }
+
+            .content{
+                margin-left:0;
+                padding:20px;
+            }
+
+            .app-shell{
+                display:block;
+            }
+
+        }
+
     </style>
 </head>
-
 <body>
 
-    <div class="hero">
-        <h1>Proyectos Finales Implementa</h1>
-        <h4>CBTis 132 - Grupo 2AMPRG</h4>
-        <p>Sitio para consultar los proyectos web publicados por los alumnos.</p>
-    </div>
+<div class="app-shell">
 
-    <div class="container">
+    <aside class="sidebar">
 
-        <div class="alert alert-info text-center">
-            Total de proyectos registrados: <strong>48</strong>
+        <h1>Implementa</h1>
+
+        <p>
+            Proyectos finales publicados por los alumnos
+            del CBTis 132.
+        </p>
+
+        <div class="menu-box">
+            <h5>Información</h5>
+
+            <ul>
+                <li>Grupo: 2AMPRG</li>
+                <li>Módulo: Implementa Aplicaciones Web</li>
+                <li>48 alumnos registrados</li>
+                <li>Publicación en GitHub Pages</li>
+            </ul>
         </div>
 
-        <div class="card">
-            <div class="card-header bg-primary text-white">
-                Lista de alumnos
-            </div>
+    </aside>
 
-            <div class="card-body p-0">
+    <main class="content">
 
-                <ul class="list-group list-group-flush">
-
-                    <li class="list-group-item"><a href="actividad2.html">ACOSTA VEGA</a></li>
-                    <li class="list-group-item"><a href="proyecto/proyecto.html">ALTAMIRANO ABAROA</a></li>
-                    <li class="list-group-item"><a href="">CASTRO MORENO</a></li>
-                    <li class="list-group-item"><a href="">CHAIDEZ BARNES</a></li>
-                    <li class="list-group-item"><a href="">COCOBA BADILLA</a></li>
-                    <li class="list-group-item"><a href="">CORRAL MEDINA</a></li>
-                    <li class="list-group-item"><a href="">ESGUERRA GUTIERREZ</a></li>
-                    <li class="list-group-item"><a href="">FELIX PONCE</a></li>
-                    <li class="list-group-item"><a href="">FLORES LOPEZ</a></li>
-                    <li class="list-group-item"><a href="">FONTES MEDINA</a></li>
-                    <li class="list-group-item"><a href="">GARCIA LERMA</a></li>
-                    <li class="list-group-item"><a href="">GUTIERREZ LOPEZ</a></li>
-                    <li class="list-group-item"><a href="">GUTIERREZ SOLANO</a></li>
-                    <li class="list-group-item"><a href="">HADAD ORNELAS</a></li>
-                    <li class="list-group-item"><a href="">HERNANDEZ IRIQUI</a></li>
-                    <li class="list-group-item"><a href="">IBARRA PERALTA</a></li>
-                    <li class="list-group-item"><a href="">IBARRA RIOS</a></li>
-                    <li class="list-group-item"><a href="">INDA ROBLES</a></li>
-                    <li class="list-group-item"><a href="">JIMENEZ RIVERA</a></li>
-                    <li class="list-group-item"><a href="">JUSAINO CEBALLOS</a></li>
-                    <li class="list-group-item"><a href="">JUSAINO CRUZ</a></li>
-                    <li class="list-group-item"><a href="">LOPEZ HIGUERA</a></li>
-                    <li class="list-group-item"><a href="">MARTINEZ URQUIJO</a></li>
-                    <li class="list-group-item"><a href="">MEZA BRACAMONTE</a></li>
-                    <li class="list-group-item"><a href="">MIRANDA MUÑOZ</a></li>
-                    <li class="list-group-item"><a href="">MONGE RODRIGUEZ</a></li>
-                    <li class="list-group-item"><a href="">MORENO BURGOS</a></li>
-                    <li class="list-group-item"><a href="">MORENO MORENO</a></li>
-                    <li class="list-group-item"><a href="">PEÑA LOPEZ</a></li>
-                    <li class="list-group-item"><a href="">PONCE DE LEON</a></li>
-                    <li class="list-group-item"><a href="">RAMOS VALDES SEBASTIAN</a></li>
-                    <li class="list-group-item"><a href="">RODRIGUEZ ESTRADA</a></li>
-                    <li class="list-group-item"><a href="">RODRIGUEZ FIGUEROA</a></li>
-                    <li class="list-group-item"><a href="">RODRIGUEZ MARTINEZ</a></li>
-                    <li class="list-group-item"><a href="">ROLDAN JIMENEZ</a></li>
-                    <li class="list-group-item"><a href="">ROMERO COTA</a></li>
-                    <li class="list-group-item"><a href="">SAAVEDRA PEREZ</a></li>
-                    <li class="list-group-item"><a href="">SALAZAR CORRALES</a></li>
-                    <li class="list-group-item"><a href="">SALINAS MORENO</a></li>
-                    <li class="list-group-item"><a href="">SEBALLOS RODRIGUEZ</a></li>
-                    <li class="list-group-item"><a href="">TERAN MARQUEZ</a></li>
-                    <li class="list-group-item"><a href="">VALDEZ MEDINA</a></li>
-                    <li class="list-group-item"><a href="">VALENZUELA CADENA</a></li>
-                    <li class="list-group-item"><a href="">VALENZUELA ESCALANTE</a></li>
-                    <li class="list-group-item"><a href="">VASQUEZ MORALES</a></li>
-                    <li class="list-group-item"><a href="">VAZQUEZ TORRES</a></li>
-                    <li class="list-group-item"><a href="">VELAZQUEZ MORALES</a></li>
-                
-                </ul>
-
-            </div>
+        <div class="header-card">
+            <h2>Proyectos Finales Implementa</h2>
+            <p>
+                Selecciona un alumno para visualizar
+                su proyecto web.
+            </p>
         </div>
 
-    </div>
+        <div class="counter">
+            Total de alumnos registrados: <strong>48</strong>
+        </div>
 
-    <footer>
-        © 2026 CBTis 132 | Módulo Implementa Aplicaciones Web
-    </footer>
+        <div class="row" id="contenedor-alumnos"></div>
+
+            <script>
+            const alumnos = [
+                ["ACOSTA VEGA",""],
+                ["ALTAMIRANO ABAROA",""],
+                ["CASTRO MORENO",""],
+                ["CHAIDEZ BARNES",""],
+                ["COCOBA BADILLA",""],
+                ["CORRAL MEDINA",""],
+                ["ESGUERRA GUTIERREZ",""],
+                ["FELIX PONCE",""],
+                ["FLORES LOPEZ",""],
+                ["FONTES MEDINA",""],
+                ["GARCIA LERMA",""],
+                ["GUTIERREZ LOPEZ",""],
+                ["GUTIERREZ SOLANO",""],
+                ["HADAD ORNELAS",""],
+                ["HERNANDEZ IRIQUI",""],
+                ["IBARRA PERALTA",""],
+                ["IBARRA RIOS",""],
+                ["INDA ROBLES",""],
+                ["JIMENEZ RIVERA",""],
+                ["JUSAINO CEBALLOS",""],
+                ["JUSAINO CRUZ",""],
+                ["LOPEZ HIGUERA",""],
+                ["MARTINEZ URQUIJO",""],
+                ["MEZA BRACAMONTE",""],
+                ["MIRANDA MUÑOZ",""],
+                ["MONGE RODRIGUEZ",""],
+                ["MORENO BURGOS",""],
+                ["MORENO MORENO",""],
+                ["PEÑA LOPEZ",""],
+                ["PONCE DE LEON",""],
+                ["RAMOS VALDES SEBASTIAN",""],
+                ["RODRIGUEZ ESTRADA",""],
+                ["RODRIGUEZ FIGUEROA",""],
+                ["RODRIGUEZ MARTINEZ",""],
+                ["ROLDAN JIMENEZ",""],
+                ["ROMERO COTA",""],
+                ["SAAVEDRA PEREZ",""],
+                ["SALAZAR CORRALES",""],
+                ["SALINAS MORENO",""],
+                ["SEBALLOS RODRIGUEZ",""],
+                ["TERAN MARQUEZ",""],
+                ["VALDEZ MEDINA",""],
+                ["VALENZUELA CADENA",""],
+                ["VALENZUELA ESCALANTE",""],
+                ["VASQUEZ MORALES",""],
+                ["VAZQUEZ TORRES",""],
+                ["VELAZQUEZ MORALES",""]
+            ];
+            
+            const contenedor = document.getElementById("contenedor-alumnos");
+            
+            alumnos.forEach(alumno => {
+            
+                const nombre = alumno[0];
+                const enlace = alumno[1];
+            
+                contenedor.innerHTML += `
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+            
+                                <h5 class="card-title">
+                                    ${nombre}
+                                </h5>
+            
+                                ${
+                                    enlace
+                                    ? `<a href="${enlace}" class="btn btn-primary">
+                                            Ver proyecto
+                                       </a>`
+                                    : `<button class="btn btn-secondary" disabled>
+                                            Pendiente
+                                       </button>`
+                                }
+            
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            </script>
+        <footer>
+            Módulo Implementa CBTis 132
+        </footer>
+
+    </main>
+
+</div>
 
 </body>
 </html>
