@@ -4,63 +4,134 @@
     <meta charset="UTF-8">
     <title>Proyectos Implementa</title>
     <link rel="icon" href="avatar.jpg">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/materia/bootstrap.min.css" rel="stylesheet" integrity="sha384-1tymk6x9Y5K+OF0tlmG2fDRcn67QGzBkiM3IgtJ3VrtGrIi5ryhHjKjeeS60f1FA" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/materia/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        body{
+            background:#f4f7fa;
+        }
+
+        .hero{
+            background:linear-gradient(135deg,#1565c0,#42a5f5);
+            color:white;
+            padding:60px 20px;
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .hero h1{
+            font-weight:bold;
+        }
+
+        .card{
+            border:none;
+            box-shadow:0 4px 15px rgba(0,0,0,.1);
+        }
+
+        .list-group-item{
+            transition:.3s;
+        }
+
+        .list-group-item:hover{
+            background:#e3f2fd;
+            transform:translateX(5px);
+        }
+
+        footer{
+            margin-top:40px;
+            text-align:center;
+            color:#666;
+            padding:20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Página de Ejemplo para el proyecto final del módulo de Implementa CBTis 132 2AMPRG</h1>
-    <h2>Nombre del Alumno</h2>
-    <p>Esta es una práctica para publicar nuestra página WEB estática en GitHub.</p>
-        <ol>
-            <li><a href="actividad2.html">ACOSTA VEGA</a></li>
-            <li><a href="proyecto/proyecto.html">ALTAMIRANO ABAROA</a></li>
-            <li><a href="">CASTRO MORENO</a></li>
-            <li><a href="">CHAIDEZ BARNES</a></li>
-            <li><a href="">COCOBA BADILLA</a></li>
-            <li><a href="">CORRAL MEDINA</a></li>
-            <li><a href="">ESGUERRA GUTIERREZ</a></li>
-            <li><a href="">FELIX PONCE</a></li>
-            <li><a href="">FLORES LOPEZ</a></li>
-            <li><a href="">FONTES MEDINA</a></li>
-            <li><a href="">GARCIA LERMA</a></li>
-            <li><a href="">GUTIERREZ LOPEZ</a></li>
-            <li><a href="">GUTIERREZ SOLANO</a></li>
-            <li><a href="">HADAD ORNELAS</a></li>
-            <li><a href="">HERNANDEZ IRIQUI</a></li>
-            <li><a href="">IBARRA PERALTA</a></li>
-            <li><a href="">IBARRA RIOS</a></li>
-            <li><a href="">INDA ROBLES</a></li>
-            <li><a href="">JIMENEZ RIVERA</a></li>
-            <li><a href="">JUSAINO CEBALLOS</a></li>
-            <li><a href="">JUSAINO CRUZ</a></li>
-            <li><a href="">LOPEZ HIGUERA</a></li>
-            <li><a href="">MARTINEZ URQUIJO</a></li>
-            <li><a href="">MEZA BRACAMONTE</a></li>
-            <li><a href="">MIRANDA MUÑOZ</a></li>
-            <li><a href="">MONGE RODRIGUEZ</a></li>
-            <li><a href="">MORENO BURGOS</a></li>
-            <li><a href="">MORENO MORENO</a></li>
-            <li><a href="">PEÑA LOPEZ</a></li>
-            <li><a href="">PONCE DE LEON</a></li>
-            <li><a href="">RAMOS VALDES SEBASTIAN</a></li>
-            <li><a href="">RODRIGUEZ ESTRADA</a></li>
-            <li><a href="">RODRIGUEZ FIGUEROA</a></li>
-            <li><a href="">RODRIGUEZ MARTINEZ</a></li>
-            <li><a href="">ROLDAN JIMENEZ</a></li>
-            <li><a href="">ROMERO COTA</a></li>
-            <li><a href="">SAAVEDRA PEREZ</a></li>
-            <li><a href="">SALAZAR CORRALES</a></li>
-            <li><a href="">SALINAS MORENO</a></li>
-            <li><a href="">SEBALLOS RODRIGUEZ</a></li>
-            <li><a href="">TERAN MARQUEZ</a></li>
-            <li><a href="">VALDEZ MEDINA</a></li>
-            <li><a href="">VALENZUELA CADENA</a></li>
-            <li><a href="">VALENZUELA ESCALANTE</a></li>
-            <li><a href="">VASQUEZ MORALES</a></li>
-            <li><a href="">VAZQUEZ TORRES</a></li>
-            <li><a href="">VELAZQUEZ MORALES</a></li>
-            
-            
-        </ol>
+
+    <div class="hero">
+        <h1>Proyectos Finales Implementa</h1>
+        <h4>CBTis 132 - Grupo 2AMPRG</h4>
+        <p>Sitio para consultar los proyectos web publicados por los alumnos.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="alert alert-info text-center">
+            Total de proyectos registrados: <strong>48</strong>
+        </div>
+
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                Lista de alumnos
+            </div>
+
+            <div class="card-body p-0">
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item"><a href="actividad2.html">ACOSTA VEGA</a></li>
+                    <li class="list-group-item"><a href="proyecto/proyecto.html">ALTAMIRANO ABAROA</a></li>
+                    <li class="list-group-item"><a href="">CASTRO MORENO</a></li>
+                    <li class="list-group-item"><a href="">CHAIDEZ BARNES</a></li>
+                    <li class="list-group-item"><a href="">COCOBA BADILLA</a></li>
+                    <li class="list-group-item"><a href="">CORRAL MEDINA</a></li>
+                    <li class="list-group-item"><a href="">ESGUERRA GUTIERREZ</a></li>
+                    <li class="list-group-item"><a href="">FELIX PONCE</a></li>
+                    <li class="list-group-item"><a href="">FLORES LOPEZ</a></li>
+                    <li class="list-group-item"><a href="">FONTES MEDINA</a></li>
+                    <li class="list-group-item"><a href="">GARCIA LERMA</a></li>
+                    <li class="list-group-item"><a href="">GUTIERREZ LOPEZ</a></li>
+                    <li class="list-group-item"><a href="">GUTIERREZ SOLANO</a></li>
+                    <li class="list-group-item"><a href="">HADAD ORNELAS</a></li>
+                    <li class="list-group-item"><a href="">HERNANDEZ IRIQUI</a></li>
+                    <li class="list-group-item"><a href="">IBARRA PERALTA</a></li>
+                    <li class="list-group-item"><a href="">IBARRA RIOS</a></li>
+                    <li class="list-group-item"><a href="">INDA ROBLES</a></li>
+                    <li class="list-group-item"><a href="">JIMENEZ RIVERA</a></li>
+                    <li class="list-group-item"><a href="">JUSAINO CEBALLOS</a></li>
+                    <li class="list-group-item"><a href="">JUSAINO CRUZ</a></li>
+                    <li class="list-group-item"><a href="">LOPEZ HIGUERA</a></li>
+                    <li class="list-group-item"><a href="">MARTINEZ URQUIJO</a></li>
+                    <li class="list-group-item"><a href="">MEZA BRACAMONTE</a></li>
+                    <li class="list-group-item"><a href="">MIRANDA MUÑOZ</a></li>
+                    <li class="list-group-item"><a href="">MONGE RODRIGUEZ</a></li>
+                    <li class="list-group-item"><a href="">MORENO BURGOS</a></li>
+                    <li class="list-group-item"><a href="">MORENO MORENO</a></li>
+                    <li class="list-group-item"><a href="">PEÑA LOPEZ</a></li>
+                    <li class="list-group-item"><a href="">PONCE DE LEON</a></li>
+                    <li class="list-group-item"><a href="">RAMOS VALDES SEBASTIAN</a></li>
+                    <li class="list-group-item"><a href="">RODRIGUEZ ESTRADA</a></li>
+                    <li class="list-group-item"><a href="">RODRIGUEZ FIGUEROA</a></li>
+                    <li class="list-group-item"><a href="">RODRIGUEZ MARTINEZ</a></li>
+                    <li class="list-group-item"><a href="">ROLDAN JIMENEZ</a></li>
+                    <li class="list-group-item"><a href="">ROMERO COTA</a></li>
+                    <li class="list-group-item"><a href="">SAAVEDRA PEREZ</a></li>
+                    <li class="list-group-item"><a href="">SALAZAR CORRALES</a></li>
+                    <li class="list-group-item"><a href="">SALINAS MORENO</a></li>
+                    <li class="list-group-item"><a href="">SEBALLOS RODRIGUEZ</a></li>
+                    <li class="list-group-item"><a href="">TERAN MARQUEZ</a></li>
+                    <li class="list-group-item"><a href="">VALDEZ MEDINA</a></li>
+                    <li class="list-group-item"><a href="">VALENZUELA CADENA</a></li>
+                    <li class="list-group-item"><a href="">VALENZUELA ESCALANTE</a></li>
+                    <li class="list-group-item"><a href="">VASQUEZ MORALES</a></li>
+                    <li class="list-group-item"><a href="">VAZQUEZ TORRES</a></li>
+                    <li class="list-group-item"><a href="">VELAZQUEZ MORALES</a></li>
+                
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 CBTis 132 | Módulo Implementa Aplicaciones Web
+    </footer>
+
 </body>
 </html>
